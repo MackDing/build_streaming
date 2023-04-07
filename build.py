@@ -12,10 +12,10 @@ from linux_command import FtpCommand
 
 
 class RunDataset:
-    dc = DockerCommand(hostname='192.168.1.107', port=20022,
-                       username='root', password='y36py5jz')
-    ftp = FtpCommand(hostname='192.168.1.107', port=20022,
-                     username='root', password='y36py5jz')
+    dc = DockerCommand(hostname='192.168.1.110', port=22,
+                       username='admin', password='XXXXXXX')
+    ftp = FtpCommand(hostname='192.168.1.110', port=22,
+                     username='admin', password='XXXXXXX')
 
     def __init__(self, image_id=None, dataset_path=None, new_package_name=None):
         self.image_id = image_id
